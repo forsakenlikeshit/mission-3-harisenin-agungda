@@ -1,0 +1,199 @@
+@import url(./style.css);
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 28px;
+    padding-right: 20px;
+    padding-bottom: 28px;
+    padding-left: 20px;
+    gap: 24px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+}
+
+.logo-top {
+    width: 144.77px;
+    height: 22.56px;
+}
+
+.login {
+    margin-bottom: 20px;
+}
+
+.login-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 514px;
+    border: 1px solid #F1F1F1;
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.login-form {
+    margin-top: 20px;
+}
+
+.card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+    color: #222325;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.required::after {
+  content: "*";
+  color: #FF5C2B;
+  margin-left: 4px;
+}
+
+.form {
+    width: 280px;
+    height: 48px;
+    border: 1px solid #3A35411F;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.password-field {
+    position: relative;
+}
+
+.eye-off {
+    position: absolute;
+    top: 24px;
+    right: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.lupa-password {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 24px;
+    text-align: right;
+    text-decoration: none;
+}
+
+.buttons {
+    width: 280px;
+    height: 34px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.login-submit {
+    background-color: #3ECF4C;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.register-button {
+    background-color: #E2FCD9CC;
+    color: #3ECF4C;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alt-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.divider {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #F1F1F1;
+}
+
+.divider span {
+    position: relative;
+    background-color: #FFFFFF;
+    padding: 0 12px;
+    font-size: 14px;
+    color: #6B7280;
+}
+
+
+.google-login-button {
+    background-color: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    color: #4A505C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+    main {
+        padding-top: 64px;
+        padding-right: 120px;
+        padding-bottom: 64px;
+        padding-left: 120px;
+        gap: 36px
+    }
+
+    .logo-top {
+        all:unset
+    }
+
+    .login-card {
+        width: 590px;
+        height: 617px;
+        padding: 36px;
+        font-size: 16px;
+    }
+
+    .p-title {
+        font-size: 32px;
+    }
+
+    .form {
+        width: 518px;
+        height: 48px;
+    }
+
+    .buttons {
+        width: 518px;
+        height: 42px;
+        font-size: 16px;
+    }
+}

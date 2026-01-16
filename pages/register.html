@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran | videobelajar</title>
+    <link rel="icon" href="/images/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/register.css">
+</head>
+<body>
+    <header>
+            <img class="logo-top" src="/images/logo.png" alt="videobelajar Logo" />
+    </header>
+    <main>
+        <section class="register-card">
+            <div class="registration">
+            <div class="card-title">
+                <p class="p-title">Pendaftaran Akun</p>
+                <p>Yuk, daftarkan akunmu sekarang juga!</p>
+            </div>
+            <!-- register form -->
+            <form class="register-form">
+                <label for="name" class="required">Nama Lengkap</label>
+                <input id="name" class="form" name="name" type="text" required/>            
+                <label for="email" class="required">Email</label>
+                <input id="email" class="form" name="email" type="email" required/>
+                <fieldset class="gender">
+                    <legend class="required">Jenis Kelamin</legend>
+                    <select class="gender-select" class="form" name="gender" required>
+                        <option value="male">Laki-laki</option>
+                        <option value="female">Perempuan</option>
+                    </select>
+                </fieldset>
+                <!-- phone number -->
+                <fieldset class="phone-number-field">
+                    <legend class="required">No. HP</legend>
+                        <div class="country-code">
+                            <span class="country-flag"><img src="/images/id.png" alt="" aria-hidden="true"/></span>
+                            <select class="country-select" name="country-code" required>
+                                <option value="+62">+62</option>
+                            </select>    
+                        </div>
+                        <input class="number-form form" name="phone-number" type="tel" required/>            
+                </fieldset>
+                <!-- end of phone number-->
+                <div class="password-field">
+                    <label for="password" class="required">Kata Sandi</label>
+                    <input id="password" class="form" name="password" type="password" required/>
+                    <img class="eye-off" src="/images/eye-off.png" alt="" aria-hidden="true"/>
+                    <label for="password-confirm" class="required">Konfirmasi Kata Sandi</label>
+                    <input id="password-confirm" class="form" name="password-confirm" type="password" required/>
+                    <img class="eye-off-confirm" src="/images/eye-off.png" alt="" aria-hidden="true"/>
+                </div>
+                <button type="submit" class="register-submit buttons">Daftar</button>
+            </form>
+            <!-- end of register form-->
+            <a href="/./" class="login-button buttons">Masuk</a>
+            </div>
+            <div class="alt-login">
+                <div class="divider">
+                    <span>atau</span>
+                </div>
+                <button class="google-login-button buttons" type="button">
+                    <img src="/images/google-icon.png" alt="" aria-hidden="true" style="width: 18px; margin-right: 8px;"/>
+                    Masuk dengan Google
+                </button>    
+            </div>
+        </section>        
+    </main>
+</body>
+</html>
