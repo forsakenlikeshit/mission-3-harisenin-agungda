@@ -125,7 +125,7 @@ h2 {
     color: #222325;
 }
 
-.tabs-wrapper {
+.tabs-container {
   position: relative;
   width: 100%;
   overflow: hidden;
